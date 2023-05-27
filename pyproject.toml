@@ -1,4 +1,24 @@
 # pyproject.toml
+
+[project]
+name = "dock-grpc"
+version = "0.1.0"
+description = "PoC compiling Python gRPC protos into docker containers"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 1 - Alpha",
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/doodeck/dock-grpc"
+
+[project.scripts]
+dock-cli = "async_greeter_server_with_graceful_shutdown:main"
+
 [build-system]
-requires = ["setuptools", "setuptools-grpc"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"

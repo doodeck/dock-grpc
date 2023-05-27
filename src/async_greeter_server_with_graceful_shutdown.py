@@ -54,7 +54,7 @@ async def serve() -> None:
     await server.wait_for_termination()
 
 
-if __name__ == '__main__':
+def main():
     logging.basicConfig(level=logging.INFO)
     loop = asyncio.get_event_loop()
     try:
@@ -62,3 +62,7 @@ if __name__ == '__main__':
     finally:
         loop.run_until_complete(*_cleanup_coroutines)
         loop.close()
+
+
+if __name__ == '__main__':
+    main()
