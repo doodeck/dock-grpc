@@ -23,3 +23,10 @@ dock-cli = "async_greeter_server_with_graceful_shutdown:main"
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
