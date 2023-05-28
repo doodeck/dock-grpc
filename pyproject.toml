@@ -21,6 +21,7 @@ Homepage = "https://github.com/doodeck/dock-grpc"
 
 [project.scripts]
 dock-grpc = "async_greeter_server_with_graceful_shutdown:main"
+dock-grpc-client = "async_greeter_client:main"
 
 [build-system]
 requires = ["setuptools"]

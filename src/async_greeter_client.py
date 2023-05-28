@@ -28,6 +28,9 @@ async def run() -> None:
     print("Greeter client received: " + response.message)
 
 
-if __name__ == '__main__':
+def main():
     logging.basicConfig()
     asyncio.run(run())
+
+if __name__ == '__main__':
+    main()
