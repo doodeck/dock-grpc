@@ -13,4 +13,4 @@ FROM scratch
 
 COPY --from=RUNNER / /
 
-ENTRYPOINT "dock-cli"
+ENTRYPOINT "dock-grpc"

@@ -20,7 +20,7 @@ dependencies = [
 Homepage = "https://github.com/doodeck/dock-grpc"
 
 [project.scripts]
-dock-cli = "async_greeter_server_with_graceful_shutdown:main"
+dock-grpc = "async_greeter_server_with_graceful_shutdown:main"
 
 [build-system]
 requires = ["setuptools"]
